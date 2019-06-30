@@ -1,0 +1,44 @@
+{
+	"name": "vscode-spfx-remove-components",
+	"displayName": "vscode-spfx-remove-components",
+	"description": "Easily remove components from SPFx solutions",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:estruyf.removespfxcomponent",
+		"workspaceContains:**/config/package-solution.json"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "estruyf.removespfxcomponent",
+				"title": "SPFx: remove component"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"@types/rimraf": "2.0.2",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"rimraf": "2.6.3",
+		"strip-json-comments": "3.0.1"
+	}
+}
