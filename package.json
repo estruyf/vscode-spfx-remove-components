@@ -1,14 +1,28 @@
 {
 	"name": "vscode-spfx-remove-components",
-	"displayName": "vscode-spfx-remove-components",
+	"displayName": "SPFx Remove Components",
 	"description": "Easily remove components from SPFx solutions",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "eliostruyf",
+  "icon": "assets/spfx-remove-components.png",
 	"engines": {
 		"vscode": "^1.35.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/estruyf/vscode-spfx-remove-components"
+	},
+	"license": "MIT",
 	"categories": [
 		"Other"
 	],
+  "keywords": [
+    "SharePoint",
+    "SPFx",
+    "TypeScript",
+    "Removal",
+    "Components"
+  ],
 	"activationEvents": [
 		"onCommand:estruyf.removespfxcomponent",
 		"workspaceContains:**/config/package-solution.json"

@@ -1,65 +1,22 @@
-# vscode-spfx-remove-components README
+# SharePoint Framework Remove Component
 
-This is the README for your extension "vscode-spfx-remove-components". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code extension is intended to easily remove SharePoint Framework components from the current project you are working on. Normally when you want to remove a component, you will also have to do some manual changes to the config file of your project. This extension eliminates this task, so you can get back to developing much quicker.
 
-## Features
+![Remove components easily](./assets/spfx-remove-component.gif)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Usage
 
-For example if there is an image subfolder under your extension project workspace:
+When you have this extension installed in VSCode, all you have to do is open the command prompt and type `SPFx: remove component`.
 
-\!\[feature X\]\(images/feature-x.png\)
+Steps:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Start by opening the command prompt:
+  - Windows `⇧+ctrl+P`
+  - Mac: `⇧+⌘+P`
+- Type: `SPFx: remove component`
+- Will ask you if you are sure to remove a component when `git` is not enabled (optional)
+- Select the component to remove, once selected it removes the component from your project
 
-## Requirements
+## Feedback and ideas
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Feedback and ideas are always welcome. Please submit them via creating an issue in the project repository: [issue list](https://github.com/estruyf/vscode-spfx-remove-components/issues).
